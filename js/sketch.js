@@ -8,5 +8,5 @@ function windowResized() {
 }
 
 function draw() {
-  background(255);
+  background(51);
 }
