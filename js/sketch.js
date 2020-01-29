@@ -9,15 +9,6 @@ function setup() {
   textAlign(CENTER);
   let cnv = createCanvas(windowWidth, 11000);
   cnv.parent('can');
-
-  nsVid = createVideo(['/js/Ns.mp4'], vidLoad);
-  nsVid.size(700,700);
-  nsVid.position(200,3200);
-}
-
-function vidLoad() {
-  nsVid.loop();
-  nsVid.volume(0);
 }
 
 function windowResized() {
