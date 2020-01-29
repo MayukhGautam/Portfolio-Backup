@@ -1,5 +1,6 @@
 
 function preload(){
+  qFont = loadFont('/js/Quicksand-Medium.ttf');
   titleF = loadFont("/js/Quicksand-Bold.ttf");
 }
 
