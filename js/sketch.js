@@ -31,7 +31,7 @@ function windowResized() {
 }
 
 function draw() {
-  let list = ["Intro to Js", "Algorithms", "Intro to HTML/CSS", "Natural Simulations", "Algorithms", "Coding Challenge", "MicroBit", "Intro to SQL", "Computers", "The Internet"];
+  let list = ["Intro to Js", "Games & Visualizations", "Intro to HTML/CSS", "Natural Simulations", "Algorithms", "Coding Challenge", "MicroBit", "Intro to SQL", "Computers", "The Internet"];
   let bg = color(0,202,202,155);
   background(255);
   textFont(titleF, 35);
