@@ -3,7 +3,11 @@ body {
   padding-top: 0px;
 }
 
-#can{
+.can{
   margin: 0px;
   padding: 0px;
+}
+
+.vid{
+  position: absolute;
 }
