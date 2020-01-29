@@ -10,7 +10,7 @@ function setup() {
   let cnv = createCanvas(windowWidth, 11000);
   cnv.parent('can');
 
-  nsVid = createVideo(['/js/vid/Ns.mp4'], vidLoad);
+  nsVid = createVideo(['/js/Ns.mp4'], vidLoad);
   nsVid.size(700,700);
   nsVid.position(200,3200);
 }
