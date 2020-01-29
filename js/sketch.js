@@ -5,10 +5,13 @@ function preload(){
 }
 
 function setup() {
-  rectMode(CENTER);
-  textAlign(CENTER);
   let cnv = createCanvas(windowWidth, 11000);
   cnv.parent('can');
+
+  A_Setup(); //A* embedded
+  let start_A = createButton('Start / Stop');
+  start_A.position(720,5330);
+  start_A.mousePressed(flip);
 }
 
 function windowResized() {
@@ -49,7 +52,7 @@ function draw() {
     text(i+1 + ") " + list[i], width-(width-40), 300 + i*1000);
 
   }
-
+  Pathfind(); //a* code
 
 
 }
