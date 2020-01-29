@@ -52,7 +52,11 @@ function draw() {
     text(i+1 + ") " + list[i], width-(width-40), 300 + i*1000);
 
   }
+
+  fill(0);
+  rect(140,5320, 570, 570, 5);
   Pathfind(); //a* code
+  rectMode(CENTER);
 
 
 }
