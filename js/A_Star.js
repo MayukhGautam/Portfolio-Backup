@@ -35,7 +35,7 @@ function blink(num){
 
 }
 
-const squares = 30;
+const squares = 50;
 let openSet = [];
 let closedSet = [];
 let SBlock = [];
@@ -161,8 +161,8 @@ class Super extends Spot{
 
 function A_Setup() {
 
-  w = 550 / squares;
-  h = 550/ squares;
+  w = 620 / squares;
+  h = 620/ squares;
 
   //Making a 2d Array
   for (let i = 0; i < squares; i++){
