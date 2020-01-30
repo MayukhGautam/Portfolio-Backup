@@ -1,4 +1,14 @@
 
+let xPositions = [500];
+let yPositions = [655];
+
+mouseClicked = function () {
+    if(mouseX >= 197 && mouseX <= 587  && mouseY <= 1050 && mouseY >= 655){
+    xPositions.push(mouseX);
+    yPositions.push(655);
+  }
+}
+
 function preload(){
   qFont = loadFont('/js/Quicksand-Medium.ttf');
   titleF = loadFont("/js/Quicksand-Bold.ttf");
@@ -12,6 +22,10 @@ function setup() {
   let start_A = createButton('Start / Stop');
   start_A.position(720,5330);
   start_A.mousePressed(flip);
+
+  let start_R = createButton('Click ON/OFF');
+  start_R.position(600,650);
+  start_R.mousePressed(beg);
 }
 
 function windowResized() {
@@ -25,7 +39,7 @@ function windowResized() {
 }
 
 function draw() {
-  let list = ["Intro to Js", "Games & Visualizations", "Intro to HTML/CSS", "Natural Simulations", "Algorithms", "Coding Challenge", "MicroBit", "Intro to SQL", "Computers", "The Internet"];
+  let list = ["Intro to Js", "Games & Visualizations", "Intro to HTML/CSS", "Natural Simulations", "Algorithms", "A* Pathfinder", "MicroBit", "Intro to SQL", "Computers", "The Internet"];
   let bg = color(0,202,202,155);
   background(255);
   textFont(titleF, 35);
@@ -46,7 +60,7 @@ function draw() {
 
   fill(255);
   textSize(100);
-  textAlign(CORNER);
+  textAlign(LEFT);
   for(var i = 0; i<10; i++){
 
     text(i+1 + ") " + list[i], width-(width-40), 300 + i*1000);
@@ -55,8 +69,9 @@ function draw() {
 
   fill(0);
   rect(140,5320, 570, 570, 5);
+  rain(xPositions, yPositions);
   Pathfind(); //a* code
-  rectMode(CENTER);
+
 
 
 }
