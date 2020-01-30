@@ -381,15 +381,15 @@ function Pathfind() {
     }
 
     fill(255);
-    rect(580,5330,120,100);
+    rect(650,5330,120,100);
     fill(0);
 
     textSize(20);
-    text(tPoints + " Steps!", 580,5355);//explain points
+    text(tPoints + " Steps!", 650,5355);//explain points
 
-    text("Yellow : -5", 580,5380);
+    text("Yellow : -5", 650,5380);
 
-    text("Blue : +1", 580,5405);
+    text("Blue : +1", 650,5405);
   }
 
   count++;
