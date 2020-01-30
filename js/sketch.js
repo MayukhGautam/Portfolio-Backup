@@ -20,7 +20,7 @@ function setup() {
 
   A_Setup(); //A* embedded
   let start_A = createButton('Start / Stop');
-  start_A.position(720,5330);
+  start_A.position(790,5330);
   start_A.mousePressed(flip);
 
   let start_R = createButton('Click ON/OFF');
@@ -68,7 +68,7 @@ function draw() {
   }
 
   fill(0);
-  rect(140,5320, 570, 570, 5);
+  rect(140,5320, 640, 640, 5);
   rain(xPositions, yPositions);
   Pathfind(); //a* code
 
